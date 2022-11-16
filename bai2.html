@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết một chương trình JavaScript thực hiện đảo ngược các giá trị trong một mảng đã
+cho. Không sử dụng phương thức reverse() -->
+    <script>
+        var myArray = [
+            -3,-2,-1,0,1,2,3
+        ]
+        let myF = 0;
+        let myL = myArray.length - 1;
+        while (myF < myL) {
+            let x = myArray[myF];
+            myArray[myF] = myArray[myL];
+            myArray[myL] = x;
+            myF++;
+            myL--;
+        }
+        console.log(myArray);
+    </script>
+</body>
+</html>
