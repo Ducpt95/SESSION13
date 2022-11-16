@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="myInput">
+    <button value="Add" onclick="myAdd()">Add</button>
+    <button value="Display" onclick="myDisplay()">Display</button>
+    <hr>
+<script>
+    var x = 0;
+    var myArray = [
+
+]
+function myAdd() {
+myArray[x] = document.getElementById('myInput').value
+x++;
+}
+function myDisplay() {
+    console.log(myArray)
+    document.getElementById('myInput').value = "";
+}
+
+</script>
+
+<!-- <script>
+
+    /* 
+    mang la kieu tham chieu.
+    cach khai bao mang
+    let array=[1,3,4]
+    let array=new Array();
+    Lam viec voi mang
+    CRUD:  quan trong
+    create: them vao mang,
+    push( them vao cuoi mang)
+    unshift() dau mang
+    Read: doc (for doc)
+    update
+    delete
+    splice() xoa
+    slice() sao chep
+    filter,map ,forEach,reduce,
+     */
+    // split
+//   let array=[1,2,3];
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+    
+//   }
+
+//   //for in, for of,
+//   console.log(array);
+
+</script> -->
+</body>
+
+</html>
